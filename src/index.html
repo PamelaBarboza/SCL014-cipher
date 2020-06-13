@@ -7,80 +7,83 @@
     <title>PROYECTO X</title>
 </head>
 <body>
-    <header>
-        <script src="index.js"></script>
-        <nav>
-        <div id="contenedor">
+  <script src="index.js"></script>
+  <!--PRIMER PANTALLA-->
+     <div id="contenedor" style="display:block;">
         <h5>BIENVENIDOS A</h5>
         <h1>X</h1>
-        <a href="#">COMENZAR</a>
-        </nav>  
-        </div>
-    </header>
-    
-<section id="intro"></section>
+        <button id="comenzar" class="botonnegro">COMENZAR</button>
+
+      </div>
+
+<!--SEGUNDA PANTALLA-->
+<div id="intro" style="display:none;">
 <h2>¿QUE ES EL CIFRADO CESAR?</h2> <br>
 <img src="cesar.png" width="300" height="260" alt="Cesar"><br><br><br>
 
 <p>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto. En este ejemplo se usa un desplazamiento de tres espacios, así que una B en el texto original se convierte en una E en el texto codificado.</p>
+<button id="continuar" class="botonnegro">CONTINUAR</button>
+</div>
+<!--TERCERA PANTALLA-->
 
-<main>
-    <section id="principal">
+    <div id="principal"  style="display:none;">
         <h4 id="fname">¿QUE QUIERES HACER CON TU CLAVE?</h4> <br>
         
-        <button id="cifrar">Cifrar Texto</button>
+        <button id="cifrar" class="botonnegro">Cifrar Texto</button>
         
-        <button id="descifrar">Descifrar Texto</button>
-    </section>
+        <button id="descifrar" class="botonnegro">Descifrar Texto</button>
+    </div>
 
-    <section id="cuerpo">
+<!--CUARTA PANTALLA-->
+    <div id="cuerpo" style="display:none;">
       <h4 id="fname">¿CUANTOS CARÁCTERES QUIERES DESPLAZAR?</h4> <br>
-      <input type="radio" name="tr" value="tres"> <p>3</p> <br>
-      <input type="radio" name="tr" value="cinco"> <p>5</p>
-    </section>
+      <input type="radio" name="tr" value="tres"><p>3</p> <br>
+      <input type="radio" name="tr" value="diez"><p>10</p> <br>
+      <button id="siguiente" class="botonnegro">SIGUIENTE</button>
+</div>
+    </div>
 
-    <section id="generador">
+    <div id="generador" style="display:none;">
       <h4 id="fname">INTRODUCE TU CLAVE</h4> <br>
       <input type="text" id="input" placeholder="8 dígitos, solo letras.">
-      <button id="cifrar">Generar</button>      
+      <button id="generar">Generar</button>      
 
-    </section>
+    </div>
 
-    <section id="final">
+<!--QUINTA PANTALLA-->
+    <div id="final" style="display:none;">
     <h4 id="fname">TU CLAVE CIFRADA ES</h4>
     <br><br>
-    <input type="text" id="output"><br><button id="cifrar">Copiar</button> 
+    <input type="text" id="output"><br><button id="copiar">Copiar</button> 
     <br><br><br>
-    <button id="crear">CREAR NUEVA CLAVE</button> 
-    <button id="inicio">IR AL INICIO</button>
+    <button id="crear1">CREAR NUEVA CLAVE</button> 
+    <button id="inicio1">IR AL INICIO</button>
     
-    </section>
+    </div>
 
-    <section id="generador2">
+<!--SEXTA PANTALLA-->
+    <div id="generador2" style="display:none;">
         <h4 id="fname">DESCIFRAR TU CLAVE</h4> <br>
         <input type="text" id="input" placeholder="Coloca solo las letras"><br><br>
         <p>Selecciona el número que figura al finalizar la clave</p>
         <input type="radio" name="tr" value="menosTres"> <p>-3</p> <br>
         <input type="radio" name="tr" value="menosCinco"> <p>-5</p>
 
-        <button id="cifrar">Generar</button>      
+        <button id="generar2">Generar</button>      
   
-      </section>
+    </div>
 
-    </section>
-
-    <section id="final2">
+<!--SEPTIMA PANTALLA-->
+  
+  <div id="final2" style="display:none;">
     <h4 id="fname">TU CLAVE DESCIFRADA ES</h4>
     <br><br>
-    <input type="text" id="output"><br><button id="cifrar">Copiar</button> 
+  <input type="text" id="output"><br><button id="copiar2">Copiar</button> 
     <br><br><br>
-    <button id="crear">CREAR NUEVA CLAVE</button> 
-    <button id="inicio">IR AL INICIO</button>
+    <button id="crear2">DESCRIFRAR NUEVA CLAVE</button> 
+    <button id="inicio2">IR AL INICIO</button>
     
-    </section>
+    </div>
 
-
-
-</main>
 </body>
 </html>

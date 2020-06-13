@@ -3,7 +3,14 @@ body{
     text-align: center;
 
 }
+main{
+    position: relative;
+}
 
+section#contenedor {
+    position: absolute;
+    
+}
 
 h1{
     font-family: bebas;
@@ -47,7 +54,7 @@ color:white;
 }
 
 
-a, .boton1{ 
+.botonnegro{ 
     font-family: bebas;
     font-size: 40px;
     color:white;
