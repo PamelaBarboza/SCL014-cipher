@@ -37,8 +37,8 @@
 <!--CUARTA PANTALLA-->
     <div id="cuerpo" style="display:none;">
       <h4 id="fname">¿CUANTOS CARÁCTERES QUIERES DESPLAZAR?</h4> <br>
-      <input type="radio" name="tr" value="tres"><p>3</p> <br>
-      <input type="radio" name="tr" value="diez"><p>10</p> <br>
+      <input type="radio" name="tres" value="tres"><p>3</p> <br>
+      <input type="radio" name="diez" value="diez"><p>10</p> <br>
       <button id="siguiente" class="botonnegro">SIGUIENTE</button>
 </div>
     </div>
@@ -46,6 +46,7 @@
     <div id="generador" style="display:none;">
       <h4 id="tuClave">INTRODUCE TU CLAVE</h4> <br>
       <input type="text" id="input1" placeholder="8 dígitos, solo letras.">
+    
       <button id="generar">Generar</button>      
 
     </div>
@@ -66,19 +67,18 @@
         <h4 id="fname">DESCIFRAR TU CLAVE</h4> <br>
         <input type="text" id="input" placeholder="Coloca solo las letras"><br><br>
         <p>Selecciona el número que figura al finalizar la clave</p>
-        <input type="radio" name="tr" value="menosTres"> <p>-3</p> <br>
-        <input type="radio" name="tr" value="menosCinco"> <p>-5</p>
+        <input type="radio" id="tr" value="menosTres"> <p>-3</p> <br>
+        <input type="radio" id="tr" value="menosCinco"> <p>-5</p>
 
         <button id="generar2">Generar</button>      
   
     </div>
 
-
   <!--OCTABA PANTALLA-->
   <div id="final2" style="display:none;">
     <h4 id="fname">TU CLAVE DESCIFRADA ES</h4>
     <br><br>
-  <input type="text" id="output"><br><button id="copiar2">Copiar</button> 
+  <input type="text" id="salida"><br><button id="copiar2">Copiar</button> 
     <br><br><br>
     <button id="crear2">DESCRIFRAR NUEVA CLAVE</button> 
     <button id="inicio2">IR AL INICIO</button>
