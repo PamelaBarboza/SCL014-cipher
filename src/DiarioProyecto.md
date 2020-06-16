@@ -95,3 +95,11 @@ Se da la utilidad de poder cambiar páginas dentro del mismo HTML con JS.
 Se empieza redacción de README del proyecto. 
 Inicio de la aplicación de funciones para realizar descifrado, el primer intento cambia el formato HTML, lo cual se modifica. 
 Se sigue buscando soluciones a ello. 
+
+CIFRADO DÍA 15-06-2020
+
+Pudimos realizar el codigo del cigrado pero nos tiraba un resultado inesperado, si poniamos que el usuario elija un offset solo desplazaba la primer letra el resto lo hacia 14 veces más adelante, esto lo hablamos al otro dia con nuestro grupo y comentamos el problema que teniamos y ellas nos dijeron que usemos el ParseInt para que de esa manera funcione porque a ellas les pasaba exactamente igual.
+
+CIFRADO DÍA 16-06-2020
+
+Pudimos Cifrar y Descifrar, funciona el offset para que el usuario eliga la cantidad de caracteres que desea desplazar. Además de el abecedasario en mayúscula implementamos las minúsculas.
