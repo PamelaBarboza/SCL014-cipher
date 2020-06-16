@@ -8,17 +8,31 @@ window.onload=function(){
    //SEGUNDA PANTALLA
   continuar.addEventListener("click", function () {
     intro.style.display = "none";
-    cuerpo.style.display = "block";
+    principal.style.display = "block";
 
   });
-   //TERCERA PANTALLA
+
+  //TERCERA PANTALLA (cifrar)
+  cifrar.addEventListener("click", function(){
+    principal.style.display ="none";
+    cuerpo.style.display="block";
+
+  })
+
+  //TERCERA PANTALLA (descifrar- septima pantalla HTML)
+  descifrar.addEventListener("click", function(){
+    principal.style.display ="none";
+    decypher.style.display ="block";
+  })
+
+   //CUARTA PANTALLA (cifrar)
   siguiente.addEventListener("click", function () {
     cuerpo.style.display = "none";
     generador.style.display = "block";
 
   });
 
-   //CUARTA PANTALLA
+   //QUINTA PANTALLA (cifrar)
   siguiente.addEventListener("click", function () {
     cuerpo.style.display = "none";
     generador.style.display = "block";
@@ -56,8 +70,7 @@ window.onload=function(){
 
     });
 
-     
-   //QUINTA PANTALLA
+   //QUINTA PANTALLA (opciones crear e inicio)
   crear1.addEventListener("click", function () {
     generador.style.display = "none";
     cuerpo.style.display = "block";
@@ -68,8 +81,30 @@ window.onload=function(){
       contenedor.style.display = "block";
 
     });   
-   }
-  
+
+    //SEXTA PANTALLA (ADDEVENTLISTENER)
+    generar2.addEventListener("click", function () {
+      decypher.style.display = "none";
+      last.style.display = "block";
+    });
+
+    // SEPTIMA PANTALLA (VOLVER A CIFRAR O INICIO)
+    crear2.addEventListener("click", function(){
+
+    });
+    
+    inicio1.addEventListener("click", function () {
+      generador.style.display = "none";
+      contenedor.style.display = "block";
+
+    });
+
+    
+
+    }
+
+    
+
     /*window.onload=function(){
     let btn = document.getElementById('btn');
     btn.addEventListener('click', () => {
@@ -132,4 +167,3 @@ window.onload=function(){
 
   }); 
 */
-
