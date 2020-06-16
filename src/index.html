@@ -37,15 +37,19 @@
 <!--CUARTA PANTALLA-->
     <div id="cuerpo" style="display:none;">
       <h4 id="fname">¿CUANTOS CARÁCTERES QUIERES DESPLAZAR?</h4> <br>
-      <input type="radio" name="tres" value="tres"><p>3</p> <br>
-      <input type="radio" name="diez" value="diez"><p>10</p> <br>
+      <select id="menuOpcion">
+        <option value="0">...</option>
+        <option value="3">tres</option>
+        <option value="5">cinco</option>
+        <option value="10">diez</option>
+      </select>
       <button id="siguiente" class="botonnegro">SIGUIENTE</button>
 </div>
     </div>
 <!--QUINTA PANTALLA-->
     <div id="generador" style="display:none;">
       <h4 id="tuClave">INTRODUCE TU CLAVE</h4> <br>
-      <input type="text" id="input1" placeholder="8 dígitos, solo letras.">
+      <input type="text" id="input1" placeholder="SOLO LETRAS MAYUSCULAS">
     
       <button id="generar">Generar</button>      
 
