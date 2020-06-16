@@ -1,6 +1,6 @@
    //PRIMERA PANTALLA
 window.onload=function(){
-comenzar.addEventListener("click", function () {
+    comenzar.addEventListener("click", function () {
     contenedor.style.display = "none";
     intro.style.display = "block";
  
@@ -8,22 +8,23 @@ comenzar.addEventListener("click", function () {
    //SEGUNDA PANTALLA
   continuar.addEventListener("click", function () {
     intro.style.display = "none";
-    principal.style.display = "block";
-
-  });
-   //TERCERA PANTALLA
-  cifrar.addEventListener("click", function () {
-    principal.style.display = "none";
     cuerpo.style.display = "block";
 
   });
+   //TERCERA PANTALLA
+  siguiente.addEventListener("click", function () {
+    cuerpo.style.display = "none";
+    generador.style.display = "block";
+
+  });
+
    //CUARTA PANTALLA
   siguiente.addEventListener("click", function () {
     cuerpo.style.display = "none";
     generador.style.display = "block";
 
   });
-   //QUINTA PANTALLA
+   
    let generar = document.getElementById('generar'); //tomo al elemento por el Id generar, y lo guardo en una variable 
     generar.addEventListener("click", function () { //le asigno una funcion click y cuando el evento se ejecute en generar ocurre: 
       let input1 = document.getElementById("input1");//tomo al elemento por el Id input1, y lo guardo en una variable 
@@ -51,30 +52,33 @@ comenzar.addEventListener("click", function () {
       document.getElementById("tuClave").innerHTML = "TU NUEVA CLAVE ES: " +  caesarCipher(valor, valor2); //Toma el elemento id tuClave e imprime en pantalla.
 
     /*generador.style.display = "none";
-    final.style.display = "block";*/
+    final.style.display = "block"; */
 
     });
 
-   
- 
+     
+   //QUINTA PANTALLA
+  crear1.addEventListener("click", function () {
+    generador.style.display = "none";
+    cuerpo.style.display = "block";
+  });
+
+    inicio1.addEventListener("click", function () {
+      generador.style.display = "none";
+      contenedor.style.display = "block";
+
+    });   
+   }
   
-   //SEXTA PANTALLA
-  inicio1.addEventListener("click", function () {
-    final.style.display = "none";
-    contenedor.style.display = "block";
-
-    
-
     /*window.onload=function(){
     let btn = document.getElementById('btn');
     btn.addEventListener('click', () => {
     let input = document.getElementById("input");
     let valor = input.value;
     document.getElementById("fname").innerHTML = "¡Hola " + valor + "!";
-    });
-    } 
-*/
-});
+    }} 
+
+
 
     const caesarCipher = (string, n)=>{    
         let result = "", code;
@@ -93,12 +97,10 @@ comenzar.addEventListener("click", function () {
         return result;
               
   }
-   /*console.log(caesarCipher(input1.value, 3));*/
+  }
+   /*console.log(caesarCipher(input1.value, 3));
    
   
-
- 
-
    //SEPTIMA PANTALLA
   crear1.addEventListener("click", function () {
     final.style.display = "none";
@@ -129,9 +131,5 @@ comenzar.addEventListener("click", function () {
     contenedor.style.display = "block";
 
   }); 
-  
-}
-
-
-
+*/
 
