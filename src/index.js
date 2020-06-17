@@ -1,3 +1,7 @@
+import cipher from './cipher.js';
+
+console.log(cipher);
+
    //PRIMERA PANTALLA
     window.onload=function(){
     comenzar.addEventListener("click", function () {
@@ -38,7 +42,7 @@
     generador.style.display = "block";
 
   });
-   
+   /*
       let generar = document.getElementById('generar'); //tomo al elemento por el Id generar, y lo guardo en una variable 
       generar.addEventListener("click", function () { //le asigno una funcion click y cuando el evento se ejecute en generar ocurre: 
       let input1 = document.getElementById("input1");//tomo al elemento por el Id input1, y lo guardo en una variable 
@@ -64,8 +68,9 @@
         }
 
       document.getElementById("tuClave").innerHTML = "TU NUEVA CLAVE ES: " +  caesarCipher(valor, valor2); //Toma el elemento id tuClave e imprime en pantalla.
+      
   });
-
+*/
    //QUINTA PANTALLA (opciones crear e inicio)
     crear1.addEventListener("click", function () {
     generador.style.display = "none";
@@ -84,7 +89,7 @@
     contenedor.style.display = "block";
   
   });
-
+/*
     let generar2 = document.getElementById('generar2'); 
     generar2.addEventListener("click", function () {  
     let input2 = document.getElementById("input2");
@@ -113,5 +118,6 @@
 
 
   });
+  */
   }
 
