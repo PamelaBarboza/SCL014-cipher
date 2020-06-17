@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(5, 35, 75);
+    background-color: rgb(11, 30, 54);
     text-align: center;
 
 }
@@ -35,7 +35,7 @@ h4, h2{
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
-    border-radius: 7px;
+    border-radius: 44px;
     margin:auto;
     margin-top: 5%;
 }
@@ -47,6 +47,7 @@ h5{
     text-align: center;
     margin-top: 5%;
     color: white;
+    
 }
 
 .elije{
@@ -60,7 +61,7 @@ color:white;
     color:white;
     background-color:black;
     padding: 8px 20px;
-    border-radius: 7px;
+    border-radius: 44px;
     text-decoration: none;
     
 }
