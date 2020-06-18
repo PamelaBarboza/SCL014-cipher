@@ -1,9 +1,17 @@
 body{
-    background-color: rgb(5, 35, 75);
+    background-image:url(probar.jpg);
+    background-position: right;
     text-align: center;
 
 }
+main{
+    position: relative;
+}
 
+section#contenedor {
+    position: absolute;
+    
+}
 
 h1{
     font-family: bebas;
@@ -28,9 +36,9 @@ h4, h2{
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
-    border-radius: 7px;
+    border-radius: 44px;
     margin:auto;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 
@@ -40,6 +48,7 @@ h5{
     text-align: center;
     margin-top: 5%;
     color: white;
+    
 }
 
 .elije{
@@ -47,13 +56,13 @@ color:white;
 }
 
 
-a, .boton1{ 
+.botonnegro{ 
     font-family: bebas;
     font-size: 40px;
     color:white;
     background-color:black;
     padding: 8px 20px;
-    border-radius: 7px;
+    border-radius: 44px;
     text-decoration: none;
     
 }

@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>PROYECTO X</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    <header>
-        <script src="index.js"></script>
-        <nav>
-        <div id="contenedor">
-        <h5>BIENVENIDOS A</h5>
+
+  <!--PRIMER PANTALLA-->
+     <div id="contenedor" style="display:block;">
+        <h5>BIENVENIDOS A</h5>        
         <h1>X</h1>
-        <a href="#">COMENZAR</a>
-        </nav>  
-        </div>
-    </header>
-    
-<section id="intro"></section>
+        <button id="comenzar" class="botonnegro">COMENZAR</button>
+
+      </div>
+
+<!--SEGUNDA PANTALLA-->
+<div id="intro" style="display:none;">
 <h2>¿QUE ES EL CIFRADO CESAR?</h2> <br>
-<img src="cesar.png" width="300" height="260" alt="Cesar"><br><br><br>
+<img src="cesar.png" width="300" height="260" alt="Cesar"><br><br>
+<p>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto. En este ejemplo se usa un desplazamiento de tres espacios, así que una B en el texto original se convierte en una E en el texto codificado.</p> <br><br>
+<button id="continuar" class="botonnegro">CONTINUAR</button>
+</div>
 
-<p>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto. En este ejemplo se usa un desplazamiento de tres espacios, así que una B en el texto original se convierte en una E en el texto codificado.</p>
+<!--TERCER PANTALLA-->
+    <div id="principal"  style="display:none;">
+      <h4 id="fname">¿QUÉ QUIERES HACER?</h4> <br>      
+      <button id="cifrar" class="botonnegro">Cifrar Texto</button>      
+      <button id="descifrar" class="botonnegro">Descifrar Texto</button>
+  </div>
 
-<main>
-    <section id="principal">
-        <h4 id="fname">¿QUE QUIERES HACER CON TU CLAVE?</h4> <br>
-        
-        <button id="cifrar">Cifrar Texto</button>
-        
-        <button id="descifrar">Descifrar Texto</button>
-    </section>
-
-    <section id="cuerpo">
+<!--CUARTA PANTALLA-->
+  <div id="cuerpo" style="display:none;">
       <h4 id="fname">¿CUANTOS CARÁCTERES QUIERES DESPLAZAR?</h4> <br>
-      <input type="radio" name="tr" value="tres"> <p>3</p> <br>
-      <input type="radio" name="tr" value="cinco"> <p>5</p>
-    </section>
+        <p> ELIGE UN NÚMERO ENTRE EL 1 Y EL 25</p>      
+      <p><input type="number" id="menuOpcion" min ="1" max ="25" name="edad"><br><br><br>       
+      <button id="siguiente" class="botonnegro">SIGUIENTE</button>
+  </div>
 
-    <section id="generador">
-      <h4 id="fname">INTRODUCE TU CLAVE</h4> <br>
-      <input type="text" id="input" placeholder="8 dígitos, solo letras.">
-      <button id="cifrar">Generar</button>      
+  
+<!--QUINTA PANTALLA-->
+    <div id="generador" style="display:none;">
+      <h4 id="tuClave">INTRODUCE TU CLAVE</h4> <br>
+      <input type="text" id="input1" placeholder="Solo letras">
+    
+      <button id="generar">Generar</button><br><br>
+      
+      <button id="crear1" class="botonnegro">CREAR NUEVA CLAVE</button> 
+      <button id="inicio1"class="botonnegro">IR AL INICIO</button>
+    </div>
 
-    </section>
-
-    <section id="final">
-
-
-    </section>
-
-
-
-</main>
-</body>
+<!--SEXTA PANTALLA-->
+      <div id="decypher" style="display:none;">
+        <h4 id="tuClave2">DESCIFRAR TU CLAVE</h4> 
+        <p>Selecciona el dezplazamiento que deseas realizar</p>
+        <p><input type="number" id="menuOpcion2" min="-25" max ="0" name="edad"><br><br>        
+        <input type="text" id="input2" placeholder="Coloca solo las letras">
+        <br><button id="generar2">Generar</button> <br><br><br><br>         
+        <button id="inicio2" class="botonnegro">IR AL INICIO</button>
+      </div>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
+

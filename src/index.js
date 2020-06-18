@@ -1,8 +1,128 @@
-window.onload=function(){
-    let btn = document.getElementById('btn');
-    btn.addEventListener('click', () => {
-    let input = document.getElementById("input");
-    let valor = input.value;
-    document.getElementById("fname").innerHTML = "¡Hola " + valor + "!";
-    });
+import cipher from './cipher.js';
+
+//console.log(cipher);
+
+
+   //PRIMERA PANTALLA
+    window.onload=function(){
+    comenzar.addEventListener("click", function () {
+    contenedor.style.display = "none";
+    intro.style.display = "block";
+ 
+  });
+   //SEGUNDA PANTALLA
+    continuar.addEventListener("click", function () {
+    intro.style.display = "none";
+    principal.style.display = "block";
+
+  });
+
+    //TERCERA PANTALLA (cifrar)
+    cifrar.addEventListener("click", function(){
+    principal.style.display ="none";
+    cuerpo.style.display="block";
+
+  });
+
+    //TERCERA PANTALLA (descifrar- septima pantalla HTML)
+    descifrar.addEventListener("click", function(){
+    principal.style.display ="none";
+    decypher.style.display ="block";
+  });
+
+   //CUARTA PANTALLA (cifrar)
+    siguiente.addEventListener("click", function () {
+    cuerpo.style.display = "none";
+    generador.style.display = "block";
+
+  });
+
+   //QUINTA PANTALLA (cifrar)
+    siguiente.addEventListener("click", function () {
+    cuerpo.style.display = "none";
+    generador.style.display = "block";
+
+  });
+  
+      let generar = document.getElementById('generar'); //tomo al elemento por el Id generar, y lo guardo en una variable 
+      generar.addEventListener("click", function () { //le asigno una funcion click y cuando el evento se ejecute en generar ocurre: 
+      let input1 = document.getElementById("input1");//tomo al elemento por el Id input1, y lo guardo en una variable 
+      let valor = input1.value; //luego almanceno en valor el value de input1
+      let menuOpcion = document.getElementById("menuOpcion");//tomo al elemento por el Id menuOpcion, y lo guardo en una variable 
+      let valor2 = parseInt(menuOpcion.value);//luego almanceno en valor el value de menuOpcion
+       /*
+      const cipher = (string, n)=>{ //se declara una constante de tipo string que tiene dos parametros
+          let result = "", code;
+          for (let i=0; i<string.length;i++){ //el ciclo for analiza letra por letra va entrando en cada if segun corresponda
+            if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
+              code = (((string.charCodeAt(i)-65)+n)%26)+65;
+            }
+            else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+              code = (((string.charCodeAt(i)-97)+n)%26)+97;
+            }
+            else if (string.charCodeAt(i)===32){ //Analiza si el numero es considerado como 32 lo Toma como un espacio
+              code = 32;
+            }
+            result+=String.fromCharCode(code);
+          }
+          return result;
+        }
+             
+*/
+    document.getElementById("tuClave").innerHTML = "TU NUEVA CLAVE ES: " +  cipher.encode(valor, valor2); //Toma el elemento id tuClave e imprime en pantalla.
+  });
+  
+   //QUINTA PANTALLA (opciones crear e inicio)
+    crear1.addEventListener("click", function () {
+    generador.style.display = "none";
+    cuerpo.style.display = "block";
+  });
+  
+    inicio1.addEventListener("click", function () {
+    generador.style.display = "none";
+    contenedor.style.display = "block";
+
+  });   
+
+    //SEXTA PANTALLA (ADDEVENTLISTENER)  
+    inicio2.addEventListener("click", function () {
+    decypher.style.display = "none";
+    contenedor.style.display = "block";
+  
+  });
+
+  
+    let generar2 = document.getElementById('generar2'); 
+    generar2.addEventListener("click", function () {  
+    let input2 = document.getElementById("input2");
+    let valor3 = input2.value;
+    let menuOpcion2 = document.getElementById("menuOpcion2");
+    let valor4 = parseInt(menuOpcion2.value);
+  /*
+    const decipher = (string, n)=>{
+      let result = "", code;
+          for (let i=0; i<string.length;i++){ 
+            if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
+              code = (((string.charCodeAt(i)-65)+n)%26)+65;
+            }
+            else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+              code = (((string.charCodeAt(i)-97)+n)%26)+97;
+            }
+            else if (string.charCodeAt(i)===32){ 
+              code = 32;
+            }
+            result+=String.fromCharCode(code);
+          }
+          return result;
     }
+*/
+  document.getElementById("tuClave2").innerHTML = "TU CLAVE DESCRIFRADA ES: " +  cipher.decode (valor3, valor4);
+  
+
+
+  });
+  
+}
+  
+  
+ 
