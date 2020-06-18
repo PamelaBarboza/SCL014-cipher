@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+//console.log(cipher);
 
 
    //PRIMERA PANTALLA
@@ -69,7 +69,7 @@ console.log(cipher);
         }
              
 */
-    document.getElementById("tuClave").innerHTML = "TU NUEVA CLAVE ES: " +  cipher(valor, valor2); //Toma el elemento id tuClave e imprime en pantalla.
+    document.getElementById("tuClave").innerHTML = "TU NUEVA CLAVE ES: " +  cipher.encode(valor, valor2); //Toma el elemento id tuClave e imprime en pantalla.
   });
   
    //QUINTA PANTALLA (opciones crear e inicio)
@@ -98,7 +98,7 @@ console.log(cipher);
     let valor3 = input2.value;
     let menuOpcion2 = document.getElementById("menuOpcion2");
     let valor4 = parseInt(menuOpcion2.value);
-/*
+  /*
     const decipher = (string, n)=>{
       let result = "", code;
           for (let i=0; i<string.length;i++){ 
@@ -116,7 +116,8 @@ console.log(cipher);
           return result;
     }
 */
-    document.getElementById("tuClave2").innerHTML = "TU CLAVE DESCRIFRADA ES: " +  decipher (valor3, valor4); //Toma el elemento id tuClave e imprime en pantalla.
+  document.getElementById("tuClave2").innerHTML = "TU CLAVE DESCRIFRADA ES: " +  cipher.decode (valor3, valor4);
+  
 
 
   });

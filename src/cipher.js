@@ -1,4 +1,6 @@
-const cipher = (string, n)=>{ //se declara una constante de tipo string que tiene dos parametros
+const cipher = {
+
+encode (string, n) { //se declara una constante de tipo string que tiene dos parametros
   let result = "", code;
   for (let i=0; i<string.length;i++){ //el ciclo for analiza letra por letra va entrando en cada if segun corresponda
     if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
@@ -13,10 +15,9 @@ const cipher = (string, n)=>{ //se declara una constante de tipo string que tien
     result+=String.fromCharCode(code);
   }
   return result;
-}
+},
 
-
-const decipher = (string, n)=>{
+  decode (string, n) {
   let result = "", code;
       for (let i=0; i<string.length;i++){ 
         if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
@@ -31,6 +32,8 @@ const decipher = (string, n)=>{
         result+=String.fromCharCode(code);
       }
       return result;
+},
+
 }
 
 export default cipher;
