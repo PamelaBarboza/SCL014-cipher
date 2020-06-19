@@ -1,5 +1,4 @@
-// Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
-import cipher from './cipher.js';
+import cipher from '../src/cipher.js';
 
 describe('cipher', () => {
 
@@ -29,7 +28,7 @@ describe('cipher', () => {
 
     test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset -33', () => {
       //completa este test!
-      expect(cipher.decode("HIJ", 33)).toBe("ABC");
+      expect(cipher.decode("HIJ", -33)).toBe("A()");
     });
 
   });
