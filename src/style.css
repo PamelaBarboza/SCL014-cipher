@@ -26,8 +26,8 @@ h1{
 p{
     color: white;
     width: 400px; 
-    margin: 0 auto;
-    text-align: justify;
+    margin: auto;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
       
 }
@@ -40,7 +40,7 @@ h4, h2{
     font-size: 20px;
     border-radius: 44px;
     margin:auto;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 
@@ -81,6 +81,9 @@ color:white;
     text-decoration: none;
     
 }
+#principal, #cuerpo, #generador, #decypher{
+    margin-top: 20%;
+}
 
 .botonnegro:hover{
     background-color:black;
@@ -94,3 +97,64 @@ color:white;
     font-family: tipeo;
     src: url(tipeo.otf);
   }
+
+  /Responsive designer para tablets y celulares/
+
+  @media (max-width: 600px) {
+ h1{
+     font-size: 240;
+     margin-top: -18%;
+     margin-bottom: -12%;
+ }
+ body{
+    margin-top: 20%;  
+    background-position-y: center ;
+  }
+
+h4{
+    margin-top: 50%;
+}
+  #intro {
+      margin-top: -16%;
+  }
+
+ }
+
+  @media (max-width: 400px) {
+      h1{
+        font-size: 250px;
+        margin-top: -16%;
+      }
+
+      h5{
+          font-size: 30px;
+      }
+
+
+      body{
+        margin-top: 25%;
+
+      }
+
+      h3{
+        font-size: 30px;
+      }
+      p{
+        font-size: 12px;
+        width: 70%;
+      
+      }
+
+      .botonnegro {
+          margin-top: 5%;
+      }
+  }
+
+
+
+
+
+
+
+
+
