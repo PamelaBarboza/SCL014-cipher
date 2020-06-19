@@ -5,6 +5,7 @@ import cipher from './cipher.js';
 
    //PRIMERA PANTALLA
     window.onload=function(){
+    let comenzar = document.getElementById("comenzar");
     comenzar.addEventListener("click", function () {
     contenedor.style.display = "none";
     intro.style.display = "block";
