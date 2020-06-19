@@ -6,12 +6,12 @@ encode (string, n) { //se declara una constante de tipo string que tiene dos par
     if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
       code = (((string.charCodeAt(i)-65)+n)%26)+65;
     }
-    else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+    /*else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
       code = (((string.charCodeAt(i)-97)+n)%26)+97;
     }
     else if (string.charCodeAt(i)===32){ //Analiza si el numero es considerado como 32 lo Toma como un espacio
       code = 32;
-    }
+    }*/
     result+=String.fromCharCode(code);
   }
   return result;
@@ -23,12 +23,12 @@ encode (string, n) { //se declara una constante de tipo string que tiene dos par
         if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
           code = (((string.charCodeAt(i)-65)+n)%26)+65;
         }
-        else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+        /*else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
           code = (((string.charCodeAt(i)-97)+n)%26)+97;
         }
         else if (string.charCodeAt(i)===32){ 
           code = 32;
-        }
+        }*/
         result+=String.fromCharCode(code);
       }
       return result;
