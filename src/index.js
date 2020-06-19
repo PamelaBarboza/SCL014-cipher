@@ -12,6 +12,8 @@ import cipher from './cipher.js';
  
   });
    //SEGUNDA PANTALLA
+   let continuar = document.getElementById("continuar");
+   let principal = document.getElementById("principal");
     continuar.addEventListener("click", function () {
     intro.style.display = "none";
     principal.style.display = "block";
@@ -26,19 +28,22 @@ import cipher from './cipher.js';
   });
 
     //TERCERA PANTALLA (descifrar- septima pantalla HTML)
+    let descifrar = document.getElementById("descifrar");
+    let decypher = document.getElementById("decypher");
     descifrar.addEventListener("click", function(){
     principal.style.display ="none";
     decypher.style.display ="block";
   });
 
    //CUARTA PANTALLA (cifrar)
-    siguiente.addEventListener("click", function () {
+   /* siguiente.addEventListener("click", function () {
     cuerpo.style.display = "none";
     generador.style.display = "block";
 
-  });
+  });*/
 
    //QUINTA PANTALLA (cifrar)
+
     siguiente.addEventListener("click", function () {
     cuerpo.style.display = "none";
     generador.style.display = "block";
@@ -85,14 +90,16 @@ import cipher from './cipher.js';
 
   });   
 
-    //SEXTA PANTALLA (ADDEVENTLISTENER)  
+    //SEXTA PANTALLA (ADDEVENTLISTENER)
+    let inicio2 = document.getElementById("inicio2");
+    let contenedor = document.getElementById("contenedor");  
     inicio2.addEventListener("click", function () {
     decypher.style.display = "none";
     contenedor.style.display = "block";
   
   });
 
-  
+    //variables de función decode de 
     let generar2 = document.getElementById('generar2'); 
     generar2.addEventListener("click", function () {  
     let input2 = document.getElementById("input2");
