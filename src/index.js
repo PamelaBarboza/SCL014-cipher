@@ -5,54 +5,45 @@ import cipher from './cipher.js';
 
    //PRIMERA PANTALLA
     window.onload=function(){
-      let comenzar = document.getElementById("comenzar"); 
-      let contenedor = document.getElementById("contenedor");
-      let intro = document.getElementById("intro");
-      comenzar.addEventListener("click", function () {
-        contenedor.style.display = "none";
-        intro.style.display = "block";
-      });
-
+    comenzar.addEventListener("click", function () {
+    contenedor.style.display = "none";
+    intro.style.display = "block";
+ 
+  });
    //SEGUNDA PANTALLA
-   let continuar = document.getElementById("continuar");
-   let principal = document.getElementById("principal");
-   continuar.addEventListener("click", function () {
-     intro.style.display = "none";
-     principal.style.display = "block";
-    });
-    
+    continuar.addEventListener("click", function () {
+    intro.style.display = "none";
+    principal.style.display = "block";
+
+  });
+
     //TERCERA PANTALLA (cifrar)
-    let cifrar = document.getElementById("cifrar");
-    let cuerpo = document.getElementById("cuerpo");
     cifrar.addEventListener("click", function(){
-      principal.style.display ="none";
-      cuerpo.style.display="block";
-    });
-    
-    //TERCERA PANTALLA (descifrar- sexta pantalla HTML)
-    let descifrar = document.getElementById("decifrar");
-    let decypher = document.getElementById("decypher");
+    principal.style.display ="none";
+    cuerpo.style.display="block";
+
+  });
+
+    //TERCERA PANTALLA (descifrar- septima pantalla HTML)
     descifrar.addEventListener("click", function(){
-      principal.style.display ="none";
-      decypher.style.display ="block";
-    });
+    principal.style.display ="none";
+    decypher.style.display ="block";
+  });
 
    //CUARTA PANTALLA (cifrar)
-   let siguiente = document.getElementById("siguiente");
-   let generador = document.getElementById("generador");
-   siguiente.addEventListener("click", function () {
-     cuerpo.style.display = "none";
-     generador.style.display = "block";
-    });
+    siguiente.addEventListener("click", function () {
+    cuerpo.style.display = "none";
+    generador.style.display = "block";
+
+  });
 
    //QUINTA PANTALLA (cifrar)
-   siguiente.addEventListener("click", function () {
-     cuerpo.style.display = "none";
-     generador.style.display = "block";
-    });
+    siguiente.addEventListener("click", function () {
+    cuerpo.style.display = "none";
+    generador.style.display = "block";
 
-      // determinación de variables de función encode de archivo cipher.js
-
+  });
+  
       let generar = document.getElementById('generar'); //tomo al elemento por el Id generar, y lo guardo en una variable 
       generar.addEventListener("click", function () { //le asigno una funcion click y cuando el evento se ejecute en generar ocurre: 
       let input1 = document.getElementById("input1");//tomo al elemento por el Id input1, y lo guardo en una variable 
@@ -82,26 +73,25 @@ import cipher from './cipher.js';
   });
   
    //QUINTA PANTALLA (opciones crear e inicio)
-   let crear1 = document.getElementById("crear1");
     crear1.addEventListener("click", function () {
-      generador.style.display = "none";
-      cuerpo.style.display = "block";
-    });
+    generador.style.display = "none";
+    cuerpo.style.display = "block";
+  });
   
-    let inicio1 = document.getElementById("inicio1");
     inicio1.addEventListener("click", function () {
-      generador.style.display = "none";
-      contenedor.style.display = "block";
-    });   
+    generador.style.display = "none";
+    contenedor.style.display = "block";
+
+  });   
 
     //SEXTA PANTALLA (ADDEVENTLISTENER)  
-    let inicio2 = document.getElementById("inicio2");
     inicio2.addEventListener("click", function () {
-      decypher.style.display = "none";
-      contenedor.style.display = "block";
-    });
+    decypher.style.display = "none";
+    contenedor.style.display = "block";
+  
+  });
 
-    // variables de función decode de archivo cipher.js
+  
     let generar2 = document.getElementById('generar2'); 
     generar2.addEventListener("click", function () {  
     let input2 = document.getElementById("input2");
@@ -128,6 +118,8 @@ import cipher from './cipher.js';
 */
   document.getElementById("tuClave2").innerHTML = "TU CLAVE DESCRIFRADA ES: " +  cipher.decode (valor3, valor4);
   
+
+
   });
   
 }
