@@ -3,3 +3,5 @@ EL público objetivo para nuestra aplicación es para todas aquellas personas qu
 El proceso de creación de "Equis" paso por distintas variantes, en un primer momento quisimos realizar una web app que permitiera la comunicación entre personas que quisieran mantener sus conversaciones de forma secreta, sin embargo al crear esa aplicación nos dimos cuenta que teníamos que trabajar con otros elementos que podrían hacer más dificultoso el trabajo de cifrado y la elaboración de la función que permitiera eso. DEspúes de ello, decidimos realizar un creador de claves, al determinar ya una aplicación y el objetivo especifico a realizar, pasamos a crear los sketch para ver como se vería la página, los cuales son los siquientes: 
 (Insertar fotos de todos los sketchs)
 Finalmente determinamos que nuestra página tuviera colores azules y un elemento más sobrio para poder inspirar confianza en los usuarios y establecer nuevas formas de seguridad para sus claves de uso diario. 
+
+LINK DEL PROPOTIPO: https://catalinajl676034.invisionapp.com/public/share/CT17MK4GBQ#screens/478601218
