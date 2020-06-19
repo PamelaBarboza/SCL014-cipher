@@ -98,7 +98,7 @@ color:white;
     src: url(tipeo.otf);
   }
 
-  //Responsive designer para tablets y celulares
+  /Responsive designer para tablets y celulares/
 
   @media (max-width: 600px) {
  h1{
