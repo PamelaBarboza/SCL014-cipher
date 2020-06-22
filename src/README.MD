@@ -36,4 +36,5 @@ LINK PROTOTIPO 2: https://catalinajl676034.invisionapp.com/public/share/CT17MK4G
 Finalmente, y en atención a la información recopilada, determinamos que la aplicación debía tener los siguientes elementos:
 1) pantallas separadas para el cifrado y descifrado, y
 2) una pantalla explicando de que se trata la aplicación y el proceso por el cual se obtiene el cifrado de claves. 
+
 Además determinamos que la imagen final de nuestra página tenía que inspirar confianza al usuario, por lo cual decidimos que los colores de la página fueran dentro de la gama de azules y negros, entregando profesionalidad a "X". 
