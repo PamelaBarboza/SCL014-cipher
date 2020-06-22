@@ -91,7 +91,13 @@ import cipher from './cipher.js';
     generador.style.display = "none";
     let cuerpo = document.getElementById("cuerpo");
     cuerpo.style.display = "block";
+    let input1 = document.getElementById("input1");
+    input1.value = " ";
+    let menuOpcion = document.getElementById ("menuOpcion");
+    menuOpcion.value = " ";
+
   });
+
   let inicio1 = document.getElementById("inicio1");
     inicio1.addEventListener("click", function () {
     let generador = document.getElementById("generador");
