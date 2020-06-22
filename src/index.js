@@ -93,8 +93,6 @@ import cipher from './cipher.js';
     cuerpo.style.display = "block";
     let input1 = document.getElementById("input1");
     input1.value = " ";
-    let menuOpcion = document.getElementById ("menuOpcion");
-    menuOpcion.value = " ";
 
   });
 
