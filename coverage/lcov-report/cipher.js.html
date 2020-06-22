@@ -24,14 +24,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
@@ -45,7 +45,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -182,37 +182,37 @@
 <a name='L124'></a><a href='#L124'>124</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -307,13 +307,13 @@
 encode (string, n) { //se declara una constante de tipo string que tiene dos parametros
   let result = "", code;
   for (let i=0; i&lt;string.length;i++){ //el ciclo for analiza letra por letra va entrando en cada if segun corresponda
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (string.charCodeAt(i)&gt;=65 &amp;&amp; string.charCodeAt(i)&lt;=90){
+    if (string.charCodeAt(i)&gt;=65 &amp;&amp; string.charCodeAt(i)&lt;=90){
       code = (((string.charCodeAt(i)-65)+n)%26)+65;
     }
-    /*else if (string.charCodeAt(i)&gt;=97 &amp;&amp; string.charCodeAt(i)&lt;=122){
+    else <span class="missing-if-branch" title="else path not taken" >E</span>if (string.charCodeAt(i)&gt;=97 &amp;&amp; string.charCodeAt(i)&lt;=122){
       code = (((string.charCodeAt(i)-97)+n)%26)+97;
     }
-    else if (string.charCodeAt(i)===32){ //Analiza si el numero es considerado como 32 lo Toma como un espacio
+    /*else if (string.charCodeAt(i)===32){ //Analiza si el numero es considerado como 32 lo Toma como un espacio
       code = 32;
     }*/
     result+=String.fromCharCode(code);
@@ -324,13 +324,13 @@ encode (string, n) { //se declara una constante de tipo string que tiene dos par
   decode (string, n) {
   let result = "", code;
       for (let i=0; i&lt;string.length;i++){ 
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (string.charCodeAt(i)&gt;=65 &amp;&amp; string.charCodeAt(i)&lt;=90){
+        if (string.charCodeAt(i)&gt;=65 &amp;&amp; string.charCodeAt(i)&lt;=90){
           code = (((string.charCodeAt(i)-65)+n)%26)+65;
         }
-       /* else if (string.charCodeAt(i)&gt;=97 &amp;&amp; string.charCodeAt(i)&lt;=122){
+       else if (string.charCodeAt(i)&gt;=97 &amp;&amp; string.charCodeAt(i)&lt;=122){
           code = (((string.charCodeAt(i)-97)+n)%26)+97;
         }
-        else if (string.charCodeAt(i)===32){ 
+        /*else if (string.charCodeAt(i)===32){ 
           code = 32;
         }*/
         result+=String.fromCharCode(code);
@@ -432,7 +432,7 @@ export default decipher;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Jun 22 2020 10:09:21 GMT-0400 (GMT-04:00)
+                at Mon Jun 22 2020 11:05:27 GMT-0400 (GMT-04:00)
             </div>
         </div>
         <script src="prettify.js"></script>
