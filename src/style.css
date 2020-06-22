@@ -15,39 +15,54 @@ section#contenedor {
 
 h1{
     font-family: bebas;
-    font-size: 470px;
+    font-size: 340px;
     text-align: center;
-    margin-top: -10%;
+    margin-top: -7%;
     color: white;
-    margin-bottom:-6%;
+    margin-bottom:-4%;
 
 }
 
 p{
     color: white;
     width: 400px; 
-    margin: 0 auto;
+    margin: auto;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-
       
-
 }
+
+
+
 h4, h2{
     color:white;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 44px;
     margin:auto;
-    margin-top: 5%;
+    margin-top: 2%;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 31px;
+    width: 400px; 
+    margin:0 auto;
+    text-align: center;
+    font-family: bebas;
+    text-shadow: black 0.6em 0.1em 0.3em;     
+
 }
 
 
 h5{
     font-family: bebas;
-    font-size: 50px;
+    font-size: 37px;
     text-align: center;
     margin-top: 5%;
     color: white;
+    text-shadow: black 0.6em 0.1em 0.3em;
     
 }
 
@@ -60,11 +75,31 @@ color:white;
     font-family: bebas;
     font-size: 40px;
     color:white;
-    background-color:black;
+    background-color:transparent;
     padding: 8px 20px;
-    border-radius: 44px;
+    border: 2px solid #000000;
     text-decoration: none;
     
+}
+#principal, #cuerpo, #generador, #decypher{
+    margin-top: 20%;
+}
+
+.botonnegro:hover{
+    background-color:black;
+    
+}
+
+
+#generar, #generar2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    padding: 6px 12px;
+    text-decoration: none;
+    border:none;
+
 }
 
 @font-face{
@@ -75,3 +110,64 @@ color:white;
     font-family: tipeo;
     src: url(tipeo.otf);
   }
+
+/*Resposive designer*/
+
+  @media (max-width: 600px) {
+ h1{
+     font-size: 240;
+     margin-top: -18%;
+     margin-bottom: -12%;
+ }
+ body{
+    margin-top: 20%;  
+    background-position-y: center ;
+  }
+
+h4{
+    margin-top: 50%;
+}
+  #intro {
+      margin-top: -16%;
+  }
+
+ }
+
+  @media (max-width: 400px) {
+      h1{
+        font-size: 250px;
+        margin-top: -16%;
+      }
+
+      h5{
+          font-size: 30px;
+      }
+
+
+      body{
+        margin-top: 25%;
+
+      }
+
+      h3{
+        font-size: 30px;
+      }
+      p{
+        font-size: 12px;
+        width: 70%;
+      
+      }
+
+      .botonnegro {
+          margin-top: 5%;
+      }
+  }
+
+
+
+
+
+
+
+
+

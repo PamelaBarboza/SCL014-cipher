@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1592843012104" clover="3.2.0">
+  <project timestamp="1592843012104" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="16" coveredconditionals="15" methods="2" coveredmethods="2" elements="35" coveredelements="34" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+    <file name="cipher.js" path="C:\Users\catal\Desktop\LABORATORIA\SCL014-cipher\src\cipher.js">
+      <metrics statements="17" coveredstatements="17" conditionals="16" coveredconditionals="15" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="9" count="3" type="cond" truecount="3" falsecount="1"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="23" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="26" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="32" count="6" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>

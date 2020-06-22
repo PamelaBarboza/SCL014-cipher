@@ -103,3 +103,11 @@ Pudimos realizar el codigo del cigrado pero nos tiraba un resultado inesperado, 
 CIFRADO DÍA 16-06-2020
 
 Pudimos Cifrar y Descifrar, funciona el offset para que el usuario eliga la cantidad de caracteres que desea desplazar. Además de el abecedasario en mayúscula implementamos las minúsculas.
+
+CIFRADO 19-06-2020
+
+Terminamos el resposive designer y pudimos realizar los tests unitarios cu cubrieron el 65% de statements, functions y lines, y un 30% de branches. Tenemos que resolver porque no nos cubre el 100%.
+
+CIFRADO 22-06-2020
+
+

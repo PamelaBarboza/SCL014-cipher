@@ -12,15 +12,19 @@
      <div id="contenedor" style="display:block;">
         <h5>BIENVENIDOS A</h5>        
         <h1>X</h1>
+        <h3>UNA FORMA MÁS SEGURA</h3>
+        <h3>PARA TUS CLAVES</h3> <br>
         <button id="comenzar" class="botonnegro">COMENZAR</button>
 
       </div>
 
 <!--SEGUNDA PANTALLA-->
 <div id="intro" style="display:none;">
-<h2>¿QUE ES EL CIFRADO CESAR?</h2> <br>
-<img src="cesar.png" width="300" height="260" alt="Cesar"><br><br>
-<p>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto. En este ejemplo se usa un desplazamiento de tres espacios, así que una B en el texto original se convierte en una E en el texto codificado.</p> <br><br>
+<h2>¿QUÉ HACE X?</h2> <br> <br>
+<p>Orientado a todas aquellas personas que deseen tener más seguridad en sus claves sin la necesidad de generar distintas. Sabemos que en el mundo de hoy, gran parte de las aplicaciones que utilizamos requieren de la generación de claves de seguridad, pero que es muy difícil recordar todas, en vista de aquello, es que la idea detrás de X es que puedas elegir una clave que siempre puedas recordar, pero con un paso más de seguridad, siendo dicha clave codificada usando el cifrado césar.</p>
+<h2>¿QUÉ ES EL CIFRADO CÉSAR?</h2> <br> <br>
+<img src="cesar.png" width="240" height="208" alt="Cesar"><br><br>
+<p>El cifrado César mueve cada una de las letras a un determinado número de espacios en el alfabeto.</p> <br><br>
 <button id="continuar" class="botonnegro">CONTINUAR</button>
 </div>
 
@@ -33,9 +37,9 @@
 
 <!--CUARTA PANTALLA-->
   <div id="cuerpo" style="display:none;">
-      <h4 id="fname">¿CUANTOS CARÁCTERES QUIERES DESPLAZAR?</h4> <br>
-        <p> ELIGE UN NÚMERO ENTRE EL 1 Y EL 25</p>      
-      <p><input type="number" id="menuOpcion" min ="1" max ="25" name="edad"><br><br><br>       
+      <h4 id="question">¿CUANTOS CARÁCTERES QUIERES DESPLAZAR?</h4> <br>
+        <p> ELIGE UN NÚMERO ENTRE EL 1 AL 33</p>      
+      <p><input type="number" id="menuOpcion" min ="1" max ="40" name="edad"></p><br><br><br>       
       <button id="siguiente" class="botonnegro">SIGUIENTE</button>
   </div>
 
@@ -45,22 +49,21 @@
       <h4 id="tuClave">INTRODUCE TU CLAVE</h4> <br>
       <input type="text" id="input1" placeholder="Solo letras">
     
-      <button id="generar">Generar</button><br><br>
+      <button id="generar">GENERAR</button><br><br>
       
       <button id="crear1" class="botonnegro">CREAR NUEVA CLAVE</button> 
-      <button id="inicio1"class="botonnegro">IR AL INICIO</button>
+      <button id= "inicio1" class="botonnegro"> IR AL INICIO </button>
     </div>
 
 <!--SEXTA PANTALLA-->
       <div id="decypher" style="display:none;">
         <h4 id="tuClave2">DESCIFRAR TU CLAVE</h4> 
-        <p>Selecciona el dezplazamiento que deseas realizar</p>
-        <p><input type="number" id="menuOpcion2" min="-25" max ="0" name="edad"><br><br>        
+        <p>Selecciona el desplazamiento que deseas realizar</p>
+        <p><input type="number" id="menuOpcion2" min="-40" max ="0" name="edad"></p><br><br>        
         <input type="text" id="input2" placeholder="Coloca solo las letras">
-        <br><button id="generar2">Generar</button> <br><br><br><br>         
+        <br><button id="generar2">GENERAR</button> <br><br><br><br>         
         <button id="inicio2" class="botonnegro">IR AL INICIO</button>
       </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
-
