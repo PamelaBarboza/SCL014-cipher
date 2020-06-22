@@ -87,6 +87,19 @@ color:white;
 
 .botonnegro:hover{
     background-color:black;
+    
+}
+
+
+#generar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    padding: 6px 12px;
+    text-decoration: none;
+    border:none;
+
 }
 
 @font-face{
@@ -98,7 +111,7 @@ color:white;
     src: url(tipeo.otf);
   }
 
-/*Resposive*/
+/*Resposive designer*/
 
   @media (max-width: 600px) {
  h1{

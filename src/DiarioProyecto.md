@@ -108,3 +108,6 @@ CIFRADO 19-06-2020
 
 Terminamos el resposive designer y pudimos realizar los tests unitarios cu cubrieron el 65% de statements, functions y lines, y un 30% de branches. Tenemos que resolver porque no nos cubre el 100%.
 
+CIFRADO 22-06-2020
+
+
